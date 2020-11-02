@@ -19,7 +19,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "deploy": "npm run build --yes && vercel --prod --token kZNvQOlxmFKUisCN0in4bR5b --yes"
+    "deploy": "npm run build && vercel --prod --token kZNvQOlxmFKUisCN0in4bR5b"
   },
   "dependencies": {
     "@nestjs/common": "^7.0.0",
