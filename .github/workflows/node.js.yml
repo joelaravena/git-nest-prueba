@@ -26,9 +26,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm run build --if-present
-    - run: echo 1:$ORG_ID
-    - run: echo 2:$PROJECT_ID
-    - run: echo 3:$TOKEN
+    - run: echo '{"orgId":"'$ORG_ID'","projectId":"'$PROJECT_ID'"}' > ./.vercel/project.json
+    - run: cat ./.vercel/project.json
     - run: npm run deploy
     env:
       CI: true
