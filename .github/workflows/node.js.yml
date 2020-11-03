@@ -30,4 +30,4 @@ jobs:
     - run: npm run deploy
     env:
       CI: true
-      ZEIT_TOKEN: ${{ secrets.TOKEN }} 
+      TOKEN: ${{ secrets.TOKEN }} 
