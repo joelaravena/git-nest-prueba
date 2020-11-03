@@ -31,3 +31,5 @@ jobs:
     env:
       CI: true
       TOKEN: ${{ secrets.TOKEN }} 
+      ORG_ID: ${{ secrets.ORG_ID }} 
+      PROJECT_ID: ${{ secrets.PROJECT_ID }} 
